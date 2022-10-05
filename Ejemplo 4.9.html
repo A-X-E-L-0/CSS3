@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Ejemplo. 4.9 --> 
+<!-- Posicionamiento absoluto de los elementos. --> 
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Posicionamiento absoluto </title>
+     <style type="text/css">
+         .imagen_fondo {position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        z-index: 1;}
+        .imagen_primerplano {position: absolute;
+                            top: 25px;
+                            left: 100px;
+                            z-index: 2;}
+        .texto {position: absolute;
+                top: 25px;
+                left: 100px;
+                z-index: 3;
+                font-size: 20pt;
+                font-family: tahoma, geneva, sans-serif;}
+        .b {position: absolute;
+                        top: 0px;
+                        left: 800px;
+                        z-index: 1;}
+     </style>
+
+</head>
+<body>
+    <form action="index.html" class="b">
+        <input type="submit" value="Regresar" />
+</form><hr>
+    
+        <p><img src="imgF.png" class="imagen_fondo" alt="Primera imagen posicionada" width="200px" height="150px"/></p>
+
+        <p>i<img src="imgP.png" class="imagen_primerplano" alt="Primera imagen posicionada" width="200px" height="150px"/></p> 
+        <p class="texto">Texto posicionado</p>
+
+
+</body>
+</html>

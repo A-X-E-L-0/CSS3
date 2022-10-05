@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Ejemplo. 4.12: anchura.html --> 
+<!-- Dimensiones de los elementos y alineación del texto. --> 
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dimensiones del cuadro </title>
+
+     <style type="text/css">
+
+        p {background-color: lightskyblue;
+            margin-bottom: .5em;
+            font-family: arial, helvetica, sans-serif;}
+
+     </style>
+
+</head>
+<body>
+    <form action="index.html" class="b">
+        <input type="submit" value="Regresar" />
+</form><hr>
+        <p style="width: 20%;">Éste es un texto que va dentro de un cuadro, el cual se estira a lo largo del veinte por ciento de la anchura de la pantalla</p>
+
+        <p style="width: 80%; text-align: center;"> Éste es un texto CENTRADO que va dentro de un cuadro, el cual se estira a lo largo del ochenta por ciento de la anchura de la pantalla.</p>
+
+        <p style="width: 20%; height: 150px; overflow: scroll;">Este cuadro solamente tiene el veinte por ciento de la anchura y una altura fija. Qué hacemos si se desborda? Ajustamoos la propiedad overflow a scroll</p>
+    </body>
+</html>

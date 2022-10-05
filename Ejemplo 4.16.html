@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Ejemplo. 4.16: tiposmedios.html --> 
+<!-- Tipos de medios de CSS. --> 
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tipos de medios </title>
+
+     <style type="text/css">
+        @media all
+
+        {
+            body {background-color: steelblue;}
+            h1 {font-family: verdana, herlvatica, sans-serif;
+                color: palegreen;}
+            p   {font-size: 12pt;
+                color: white;
+                font-family: arial, sans-serif;}
+        } /* Fin de ña declaración @media all. */
+
+        @media print
+        {
+            body {background-color: white;}
+            h1 {color: seagreen;}
+            p  {font-size: 14pt;
+                color: steelblue;
+                font-family: "times new roman", times, serif;}
+        } /* Fin de ña declaración @media print. */
+
+
+     </style>
+
+</head>
+<body>
+    <form action="index.html">
+        <input type="submit" value="Regresar" />
+</form><hr>
+        <h1> Ejemplo de tipos de medios CSS</h1>
+
+        <p>
+            Este ejemplo usa tipos de medios de CSS para variar la forma en que aparece la página impresa y cómo aparece en cualquier otro medio. Este texto aparece con una fuente distinta en papel o en vista previa de impresión.Para ver la diferencia en Internet Explorer, vaya al menú de Imprimir y seleccione Vista previa de impresión. En Firefox, seleccione Vista preliminar del menú Imprimir.
+        </p>
+
+    </body>
+</html>

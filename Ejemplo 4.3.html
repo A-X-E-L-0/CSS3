@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Ejemplo. 4.3 --> 
+<!-- Hojas de estilo incrustada. --> 
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hojas de estilo incrustada </title>
+
+     <!-- esto empieza la sección de la hoja de estilo -->
+     <style type="text/css">
+          
+          em {
+               font-weight: bold;
+               color: black;
+          }
+
+          h1{
+               font-family: tahoma, helvetica, sans-serif;
+          }
+          p {
+               font-size: arial, sans-serif;
+          }
+          .especial {color: purple;}
+
+     </style>
+   
+</head>
+<body>
+     <form action="index.html">
+        <input type="submit" value="Regresar" />
+</form><hr>
+        <!-- este atributo aplica la clase de estilo .especial -->
+        <h1 class="especial">Deitel & Associates, Inc.</h1>
+
+        <p>Deitel & associates, Inc. es una empresa dedicada al entretenimiento corporativo y la creación de contenido, que se especializa en lenguajes de programación tecnológica de internet y Web, desarrollo de aplicaciones para iPhone y android, y educación sobre la tecnología de los objetos</p>
+
+        <h1>Clientes</h1>
+
+        <p class="especial"> Los clientes de la empresa incluyen muchas <em>compañias Fortune 1000</em>, agencias gubernamentales, sectores del ejercito y organizaciones de negocios.</p>
+     
+ 
+</body>
+</html>
